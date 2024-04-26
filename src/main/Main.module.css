@@ -1,0 +1,21 @@
+.main{
+  display: flex;
+  margin: 24px 60px;
+}
+
+h1 {
+  font-weight:  900;
+  font-size: 60px;
+  line-height: 72px;
+
+}
+.main_tittle{
+  margin-bottom: 20px;
+}
+.info{
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+.img_main{
+  width: 48%;
+}
