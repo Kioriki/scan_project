@@ -8,7 +8,7 @@ function Main() {
             <div className={styles.main_h1}>
                 <h1 className={styles.main_tittle}>Сервис по поиску публикаций о компании по его инн</h1>
                 <p className={styles.info}>Комплексный анализ публикаций, получение данных в формате PDF на электронную почту.</p>
-                <button className={styles.button}>Запросить данные</button>
+                <button><div className={styles.btn}>Запросить данные</div></button>
             </div>
           <img className={styles.img_main}src='/main_img.svg'/>
         </div>

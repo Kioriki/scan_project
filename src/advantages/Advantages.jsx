@@ -11,7 +11,7 @@ function Advantages() {
             <div className={styles.info}><img className={styles.icon} src='/Lock.svg'/><br/>Защита конфеденциальных сведений, не подлежащих разглашению по федеральному законодательству</div>
         </div>
         <img className={styles.arrow} src='/icon_right.svg'/>
-        <img className={styles.img_man} src='/man.svg'/>
+        
       </div>
     )
   }
