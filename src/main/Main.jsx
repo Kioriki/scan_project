@@ -3,7 +3,7 @@ import styles from './Main.module.css'
 
 function Main() {
   return (
-   <>
+   <div id='container'>
        <div className={styles.main}>
             <div className={styles.main_h1}>
                 <h1 className={styles.main_tittle}>Сервис по поиску публикаций о компании по его инн</h1>
@@ -12,7 +12,7 @@ function Main() {
             </div>
           <img className={styles.img_main}src='/main_img.svg'/>
         </div>
-    </>
+    </div>
   )
 }
 

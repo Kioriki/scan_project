@@ -2,7 +2,7 @@ import styles from './Tarifs.module.css'
 
 function Tarifs() {
     return (
-     <>
+        <div id='container'>
         <div>
             <h2>наши тарифы</h2>
                 <div className={styles.tarifs}>
@@ -89,7 +89,7 @@ function Tarifs() {
                 </div>
             
         </div>
-    </>
+    </div>
   )
 }
 

@@ -1,6 +1,7 @@
 .main{
   display: flex;
   margin: 24px 60px;
+  max-width: 1440px;
 }
 
 h1 {
