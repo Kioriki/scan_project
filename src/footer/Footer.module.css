@@ -1,5 +1,19 @@
 footer{
     background-color: #029491;
-    margin: 118px 20px 0 -100px;
+    margin-top: 118px;
     width: 100%;
+
+}
+.footer_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer_info p{
+    font-size: 14px;
+    color: #fff;
+}
+.copyright{
+    margin-top: 21px;
 }

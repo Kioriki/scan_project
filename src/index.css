@@ -29,11 +29,11 @@ a:hover {
 }
 
 body {
-  margin: 117px 60px 255px 60px;
+
   display: flex;
   place-items: center;
   max-width: 1440px;
-  
+  margin: 117px 0px 0px 0px;
 }
 
 button {
