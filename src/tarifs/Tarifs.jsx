@@ -31,7 +31,7 @@ function Tarifs() {
                                 </ul>
                             </div>
                         </div>
-                        <button className={styles.btn_info}><div className={styles.btn}>Перейти в личный кабинет</div></button>
+                        <div className={styles.btn_info}><button ><div className={styles.btn}>Перейти в личный кабинет</div></button></div>
                     </div>
                     <div className={styles.pro}>
                         <div className={styles.pro_header}>
@@ -58,7 +58,7 @@ function Tarifs() {
                                 </ul>
                             </div>
                         </div>
-                        <button className={styles.btn_info}><div className={styles.btn}>Подробнее</div></button>
+                        <div className={styles.btn_info}><button ><div className={styles.btn}>Подробнее</div></button></div>
                     </div>
                     <div className={styles.business}>
                         <div className={styles.business_header}>
@@ -84,7 +84,7 @@ function Tarifs() {
                                 </ul>
                             </div>
                         </div>
-                        <button className={styles.btn_info}><div className={styles.btn}>Подробнее</div></button>
+                        <div className={styles.btn_info}><button ><div className={styles.btn}>Подробнее</div></button></div>
                     </div>
                 </div>
             

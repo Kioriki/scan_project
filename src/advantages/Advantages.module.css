@@ -8,9 +8,18 @@ h2{
     width: 65px;
     height: 79px;
 }
-.arrow{
+.arrow_left{
     width: 39px;
     position: absolute;
+    top: 1110px;
+    left: 180px;
+  
+}
+.arrow_right{
+    width: 39px;
+    position: absolute;
+    top: 1110px;
+    right: 180px;
   
 }
 .advantages_main{
