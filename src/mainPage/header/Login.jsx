@@ -6,7 +6,7 @@ function Login () {
 
     return (
         <div className={styles.profile}>
-            <div className={styles.registration}><NavLink className={styles.button_registration}>Зарегестрироваться</NavLink></div>
+            <div className={styles.registration}><NavLink className={styles.button_registration}>Зарегистрироваться</NavLink></div>
             <div className={styles.login}><NavLink to="/login" className={styles.button_login}>Войти</NavLink></div>
         </div>
     )
