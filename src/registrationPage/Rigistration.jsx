@@ -1,5 +1,5 @@
 import styles from './Registration.module.css'
-
+import Form from './Form/Form.jsx'
 function Registration(){
     return(
         <div id="container">
