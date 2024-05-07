@@ -1,0 +1,57 @@
+.header{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.header_nav{
+    display: flex;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+.logo_header{
+   margin-left: 60px; 
+}
+.login{
+    color: #000;
+    background-color: #7CE3E1;
+    border-radius: 5px;
+    padding: 5px 12px;
+    margin-left: 20px;
+}
+
+.button_login {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .registration{
+    color: gray;
+    font-size: 14px;
+    border-right: 2px solid #7CE3E1;
+    padding:  0 20px;
+  }
+.button_nav{
+    padding: 0 50px;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+}
+.button_registration{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}

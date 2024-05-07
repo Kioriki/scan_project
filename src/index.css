@@ -1,7 +1,7 @@
- ul, li {margin: 0;padding: 0;}
- h1, h2, h4{margin: 0;padding: 0; text-transform: uppercase;}
- h3 {margin: 0;padding: 0;}
-p{margin: 0;padding: 0; font-size:18px;}
+ul, li {margin: 0;padding: 0;}
+h1, h2, h4{margin: 0;padding: 0; text-transform: uppercase;}
+h3 {margin: 0;padding: 0;}
+p {margin: 0 auto; padding: 0; font-size:18px;}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -27,13 +27,17 @@ a {
 a:hover {
   color: #535bf2;
 }
-
+#container{
+  max-width: 1440px;
+  margin: 0 auto;
+  
+}
 body {
 
-  display: flex;
+  /* display: flex; */
   place-items: center;
-  max-width: 1440px;
-  margin: 117px 0px 0px 0px;
+  width: 100%; 
+
 }
 
 
@@ -46,7 +50,7 @@ button {
   background-color: #5970FF;
   cursor: pointer;
   transition: border-color 0.25s;
-  width: 335px;
+
 }
 button:hover {
   border-color: #646cff;

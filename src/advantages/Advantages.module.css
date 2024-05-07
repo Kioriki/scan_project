@@ -11,14 +11,14 @@ h2{
 .arrow_left{
     width: 39px;
     position: absolute;
-    top: 1110px;
+    top: 1180px;
     left: 180px;
   
 }
 .arrow_right{
     width: 39px;
     position: absolute;
-    top: 1110px;
+    top: 1180px;
     right: 180px;
   
 }
@@ -43,4 +43,11 @@ position: relative;
     border-radius: 10px;
     box-shadow: 0px 0px 10px gray;
     font-size: 18px;
+}
+.button_slider{
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
 }
