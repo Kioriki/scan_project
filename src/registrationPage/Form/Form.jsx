@@ -10,8 +10,10 @@ function Form(){
                 <form>
                     
                     <div className={styles.loginsignup}>
+                    
                     <button className={styles.login}>Войти</button>
                     <button className={styles.signup}>Зарегистрироваться</button>
+                    
                     </div>
                     <div className={styles.formGroup}>
                     <label>

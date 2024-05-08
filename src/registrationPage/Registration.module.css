@@ -1,0 +1,18 @@
+.registr{
+    display: flex;
+}
+.registr_info{
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 120px;
+}
+.registr_page{
+    display: flex;
+    flex-wrap: wrap;
+}
+.registr_img{
+    margin-left: 100px;
+}
