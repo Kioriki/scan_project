@@ -52,13 +52,15 @@ button {
 
 }
 button:hover {
-  border-color: #646cff;
+  box-shadow: inherit 0 0px 0px 40px inset;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
+}
+.button:active {
+  
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

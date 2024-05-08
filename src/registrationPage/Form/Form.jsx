@@ -19,8 +19,8 @@ function Form(){
                     <label>
                         Логин или номер телефона:
                         <input
-                            // type="text"
-                            // className={styles.FormControl}
+                            type="text"
+                            className={styles.FormControl}
                             // placeholder={userName}
                             // value={userName}
                             // onChange={(e) => setUserName(e.target.value)}
@@ -31,9 +31,9 @@ function Form(){
                     <label>
                         Пароль:
                         <input
-                            // type="password"
-                            // className={styles.FormControl}
-                            // placeholder=""
+                            type="password"
+                            className={styles.FormControl}
+                            placeholder=""
                             // value={password}
                             // onChange={(e) => setPassword(e.target.value)}
                         />

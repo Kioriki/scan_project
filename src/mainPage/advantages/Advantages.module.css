@@ -10,20 +10,22 @@ h2{
 }
 .arrow_left{
     width: 39px;
-    position: absolute;
-    top: 1180px;
-    left: 180px;
+
   
 }
 .arrow_right{
     width: 39px;
-    position: absolute;
-    top: 1180px;
-    right: 180px;
+
   
 }
+.advantages_slider{
+    display: flex;
+    align-items: center;
+    margin: 0 -30px;
+}
 .advantages_main{
-position: relative;
+
+align-items: center;
 }
 .advantages{
     display: flex;
