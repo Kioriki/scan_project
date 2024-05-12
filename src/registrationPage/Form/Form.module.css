@@ -179,6 +179,8 @@
   .facebook {
     margin: 15px;
   }
+
+  .error {color:red; margin:10px 0; text-align:center; font-size:12px;}
   
   /* @media (min-width: 993px) and (max-width: 1400px) {
   } */

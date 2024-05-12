@@ -1,5 +1,6 @@
-import styles from './Header.module.css'
-import { Routes, Route, Link} from 'react-router-dom'
+import styles from './Header.module.css';
+import AuthBlock from "./AuthBlock.jsx";
+import { Link } from 'react-router-dom';
 function Header() {
   return (
    <div id='container'>
@@ -10,10 +11,7 @@ function Header() {
                 <Link to="/" className={styles.button_nav}>Тарифы</Link>
                 <Link to="/" className={styles.button_nav}>FAQ</Link>
             </div>
-            <div className={styles.profile}>
-                <div className={styles.registration}><Link to="/" className={styles.button_registration}>Зарегистрироваться</Link></div>
-                <div className={styles.login}><Link to="/registr" className={styles.button_login}>Войти</Link></div>
-            </div>
+            <AuthBlock />
         </div>
     </div>
   )
