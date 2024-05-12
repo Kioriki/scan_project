@@ -1,16 +1,29 @@
 import styles from './Header.module.css'
 import { Link } from 'react-router-dom'
-import { isAuth } from "../../func/authControl.jsx";
+import { isAuth, authClear } from "../../func/authControl.jsx";
+import { useNavigate } from "react-router-dom";
 
-function AuthBlock() {    
+
+function AuthBlock() { 
+    const navigate = useNavigate();
+    
+    function clear(){
+        console.log('clear');
+        authClear();
+        navigate("/");
+    }
+
     if(isAuth()){
         console.log('isAuth');
+        
+        
+       
         return (
             <>
                 <div className={styles.profileAuth}>
                     <div className={styles.profileInfo}>
                         <div className={styles.profileName}>Алексей А. </div>
-                        <div className={styles.profileLogout}>Выйти</div>
+                        <div onClick={clear} className={styles.profileLogout}>Выйти</div>
                     </div>
                     <div className={styles.profileIcon}>
                         <img src='./logo-scan-header.svg'></img>

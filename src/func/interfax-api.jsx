@@ -25,6 +25,7 @@ function sendLogin(login, password){
         if (data.accessToken) {
             const navigate = useNavigate();
             authSet(data);
+            localStorage.setItem("login", login);
             navigate("/");
         }else{
             //return "dsfsdfs";
