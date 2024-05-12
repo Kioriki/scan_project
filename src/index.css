@@ -1,9 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+	font-family: 'Ferry';
+	src: url('./src/fonts/Ferry-Black.eot');
+	src: local('Ferry Black'), local('Ferry-Black'),
+		url('./src/fonts/Ferry-Black.eot?#iefix') format('embedded-opentype'),
+		url('./src/fonts/Ferry-Black.woff') format('woff'),
+		url('./src/fonts/Ferry-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+.mySwiper {padding: 0 35px!important;}
+.mySwiper .swiper-slide {height:auto; padding: 5px 0;}
+.swiper-button-prev, .swiper-button-next {color:#CCCCCC!important;}
+
 ul, li {margin: 0;padding: 0;}
-h1, h2, h4{margin: 0;padding: 0; text-transform: uppercase;}
+h1, h2 {margin: 0;padding: 0; text-transform: uppercase; font-family: 'Ferry';  font-weight: 900;  font-style: normal;}
 h3 {margin: 0;padding: 0;}
+h4 {margin: 0;padding: 0;}
 p {margin: 0 auto; padding: 0; font-size:18px;}
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -18,6 +36,8 @@ p {margin: 0 auto; padding: 0; font-size:18px;}
   display: flex;
   justify-content: center;
 }
+
+* {box-sizing: border-box;}
 
 a {
 

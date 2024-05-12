@@ -1,5 +1,4 @@
 import Slider1 from './Slider/Slider.jsx'
-
 import styles from './Advantages.module.css'
 
 function Advantages() {

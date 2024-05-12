@@ -36,7 +36,7 @@ align-items: center;
     margin-bottom: 70px;
 }
 .info{
-    width: 33%;
+    /* width: 33%; */
     display:flex;
     flex-wrap: wrap ;
     flex-direction: column;
@@ -45,6 +45,7 @@ align-items: center;
     border-radius: 10px;
     box-shadow: 0px 0px 10px gray;
     font-size: 18px;
+    height: 100%;
 }
 .button_slider{
     border: none;
@@ -53,3 +54,5 @@ align-items: center;
     background-color: transparent;
     cursor: pointer;
 }
+
+

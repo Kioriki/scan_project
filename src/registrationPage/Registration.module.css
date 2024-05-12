@@ -4,7 +4,10 @@
 .registr_info{
     font-size: 40px;
     font-weight: 900;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+    font-family: 'Ferry';  
+    font-weight: 900;  
+    font-style: normal;
     display: flex;
     flex-wrap: wrap;
     margin-right: 120px;
