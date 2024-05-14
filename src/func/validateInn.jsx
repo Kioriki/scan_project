@@ -11,7 +11,7 @@ export function validateInn(inn) {
 
     // Проверка наличия значения inn
     if (!inn.length) {
-        errorStateInn = 'ИНН пуст';
+        errorStateInn = 'Введите корректные данные';
     } else if (/[^0-9]/.test(inn)) {
         errorStateInn = 'ИНН может состоять только из цифр';
     } else if (![10, 12].includes(inn.length)) {

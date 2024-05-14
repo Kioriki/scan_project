@@ -1,5 +1,5 @@
 import styles from './Main.module.css'
-
+import { NavLink } from 'react-router-dom';
 
 function Main() {
   return (
@@ -8,7 +8,9 @@ function Main() {
             <div className={styles.main_h1}>
                 <h1 className={styles.main_tittle}>Сервис по поиску публикаций о&nbsp;компании <br/>по его инн</h1>
                 <p className={styles.info}>Комплексный анализ публикаций, получение данных в формате PDF на электронную почту.</p>
-                <button><div className={styles.btn}>Запросить данные</div></button>
+                
+                <NavLink to="/search"><button><div className={styles.btn}>Запросить данные</div></button></NavLink>
+                
             </div>
           <img className={styles.img_main}src='/main_img.svg'/>
         </div>

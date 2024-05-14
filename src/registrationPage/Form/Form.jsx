@@ -82,7 +82,7 @@ function Form(){
                         <input
                             type="text"
                             className={styles.FormControl}
-                            placeholder="Логин"
+                            placeholder=""
                             value={login}
                             onChange={(e) => changeLogin(e.target.value)}
                             //onInput={handleChange}
