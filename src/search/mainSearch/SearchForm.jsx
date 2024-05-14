@@ -155,7 +155,7 @@ const SearchForm = () => {
                         name="completeness"
                         checked={searchData.completeness}
                         onChange={handleInputChange}
-                        className={styles.checkbox}
+                        className={styles.custom_checkbox}
                     />
                     <label htmlFor="completeness" className={styles.label}>
                       Признак максимальной полноты
@@ -168,7 +168,7 @@ const SearchForm = () => {
                         name="businessContext"
                         checked={searchData.businessContext}
                         onChange={handleInputChange}
-                        className={styles.checkbox}
+                        className={styles.custom_checkbox}
                     />
                     <label
                         htmlFor="businessContext"
@@ -184,7 +184,7 @@ const SearchForm = () => {
                         name="mainRole"
                         checked={searchData.mainRole}
                         onChange={handleInputChange}
-                        className={styles.checkbox}
+                        className={styles.custom_checkbox}
                     />
                     <label htmlFor="mainRole" className={styles.label}>
                       Главная роль в публикации
@@ -197,7 +197,7 @@ const SearchForm = () => {
                         name="riskFactors"
                         checked={searchData.riskFactors}
                         onChange={handleInputChange}
-                        className={styles.checkbox}
+                        className={styles.custom_checkbox}
                     />
                     <label htmlFor="riskFactors" className={styles.label}>
                       В Публикации только c риск-факторами
@@ -210,7 +210,7 @@ const SearchForm = () => {
                         name="technicalNews"
                         checked={searchData.technicalNews}
                         onChange={handleInputChange}
-                        className={styles.checkbox}
+                        className={styles.custom_checkbox}
                     />
                     <label htmlFor="technicalNews" className={styles.label}>
                       Включать технические новости рынков
@@ -223,7 +223,7 @@ const SearchForm = () => {
                         name="announcements"
                         checked={searchData.announcements}
                         onChange={handleInputChange}
-                        className={styles.checkbox}
+                        className={styles.custom_checkbox}
                     />
                     <label htmlFor="announcements" className={styles.label}>
                       Включать анонсы и календари
@@ -236,7 +236,7 @@ const SearchForm = () => {
                         name="newsDigests"
                         checked={searchData.newsDigests}
                         onChange={handleInputChange}
-                        className={styles.checkbox}
+                        className={styles.custom_checkbox}
                     />
                     <label htmlFor="newsDigests" className={styles.label}>
                       Включать сводки новостей
