@@ -120,7 +120,7 @@ const SearchForm = () => {
                   />
                   <div>Диапазон поиска *</div>
                   <div className={styles.data}>
-                    <label className={styles.left_label}></label>
+                    
                     <input
                         placeholder="Дата начала"
                         type="date"
@@ -131,8 +131,8 @@ const SearchForm = () => {
                         required
                         className={styles.left_input}
                     />
-                    <div className={styles.date_separator}></div>
-                    <label className={styles.left_label}></label>
+                    
+                    
                     <input
                         placeholder="Дата конца"
                         type="date"

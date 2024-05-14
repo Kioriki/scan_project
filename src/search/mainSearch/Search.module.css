@@ -117,14 +117,16 @@ input{
 .left_input {
     padding: 5px;
     border-radius: 5px;
-    
+    text-align: center;
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .left_input:last-child{
     margin-left: 20px;
 }
-
+.left_input::placeholder{
+    font-family: "Inter", sans-serif;
+}
 .data {
     display: flex;
     justify-content: space-between;
