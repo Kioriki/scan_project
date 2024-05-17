@@ -4,12 +4,14 @@ import styles from './Result.module.css';
 import { mapArr } from '../../func/map';
 import DotLoader from 'react-spinners/DotLoader';
 
-function GeneralResultLoader() {
+function ResultForm() {
   return (
+    <div id="container">
       <div className={styles.loader}>
-        <DotLoader color="#000" loading={true} size={50} aria-label="Loading Spinner" data-testid="loader" />
-        <p className={styles.loading}>Загрузка...</p>
+        <DotLoader color="grey" loading={true} size={50} aria-label="Loading Spinner" data-testid="loader" />
+        <p className={styles.loading}>Загружаем данные</p>
       </div>
+    </div>
   );
 }
 
@@ -33,9 +35,10 @@ function ResultSlider({ data, isLoading }) {
   };
 
   return (
+    <div id="container">
       <div className={styles.resultSlider}>
         <button onClick={slideLeft} className={`${styles.controller} ${styles.controllerLeft}`} type="button">
-          <img src={rightArrow} alt="Left Arrow" />
+          <img src='/icon_left.svg' alt="Left Arrow" />
         </button>
         <div className={styles.wrapper}>
           <div className={styles.main}>
@@ -45,7 +48,7 @@ function ResultSlider({ data, isLoading }) {
           </div>
           <ul ref={dataListRef} className={styles.dataList}>
             {isLoading ? (
-                <GeneralResultLoader />
+                <ResultForm />
             ) : (
                 mappingData.map((item, index) => (
                     <li key={index} className={styles.dataItem}>
@@ -58,10 +61,11 @@ function ResultSlider({ data, isLoading }) {
           </ul>
         </div>
         <button onClick={slideRight} className={`${styles.controller} ${styles.controllerRight}`} type="button">
-          <img src={rightArrow} alt="Right Arrow" />
+          <img src='/icon_right.svg' alt="Right Arrow" />
         </button>
       </div>
+    </div>
   );
 }
 
-export { ResultSlider, GeneralResultLoader };
+export { ResultSlider, ResultForm };
