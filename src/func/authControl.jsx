@@ -4,7 +4,7 @@
 function authSet(data){
     localStorage.setItem("isAuth", true);
     localStorage.setItem("expire", data.expire);
-    localStorage.setItem("accessToken", data.expire);
+    localStorage.setItem("accessToken", data.accessToken);
 }
 
 function isAuth(){

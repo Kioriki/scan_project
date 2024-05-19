@@ -3,7 +3,7 @@ import { HISTOGRAMS, OBJECTSEARCH, DOCUMENTS } from "./API.jsx";
 
 async function makeRequest(url, data) {
     const headers = {
-        Authorization: `Bearer ${localStorage.getItem('TOKEN')}`,
+        Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
     };
 
     try {

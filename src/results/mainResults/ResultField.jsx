@@ -35,6 +35,9 @@ function ResultField() {
   const setDetailsData = context.setDetailsData;
 
   useEffect(() => {
+
+    console.log(resultData)
+
     if (resultData && resultData.data.items.length > 0) {
       const documentIds = getFirstN(resultData.data.items, countDocs).map(item => item.encodedId);
       fetchDetailData(documentIds).then(setDetailsData);
