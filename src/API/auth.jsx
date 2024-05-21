@@ -21,6 +21,7 @@ async function logIn(userName, password) {
 }
 
 async function accountInfo(token) {
+    
     if (!token) {
         console.log("You are not authorized");
         return;
@@ -40,3 +41,4 @@ async function accountInfo(token) {
 }
 
 export { logIn, accountInfo };
+

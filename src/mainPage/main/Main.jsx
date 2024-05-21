@@ -1,5 +1,8 @@
 import styles from './Main.module.css'
 import { NavLink } from 'react-router-dom';
+import { isAuth } from "../../func/authControl.jsx";
+
+
 
 function Main() {
   return (
@@ -9,7 +12,9 @@ function Main() {
                 <h1 className={styles.main_tittle}>Сервис по поиску публикаций о&nbsp;компании <br/>по его инн</h1>
                 <p className={styles.info}>Комплексный анализ публикаций, получение данных в формате PDF на электронную почту.</p>
                 
-                <NavLink to="/search"><button><div className={styles.btn}>Запросить данные</div></button></NavLink>
+                {isAuth() ? (
+                                <NavLink to="/search"><button><div className={styles.btn}>Запросить данные</div></button></NavLink>
+                            ) : (<NavLink to="/registr"><button><div className={styles.btn}>Запросить данные</div></button></NavLink>)}
                 
             </div>
           <img className={styles.img_main}src='/main_img.svg'/>

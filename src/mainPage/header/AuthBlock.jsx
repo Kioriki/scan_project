@@ -2,33 +2,62 @@ import styles from './Header.module.css'
 import { Link } from 'react-router-dom'
 import { isAuth, authClear } from "../../func/authControl.jsx";
 import { useNavigate } from "react-router-dom";
+import { accountInfo } from "../../API/auth.jsx";
 import { useState } from 'react';
 
 
 
+
 function AuthBlock() { 
+
+    const [companiesUsed, setCompaniesUsed] = useState("");
+    const [companiesLimit, setcompaniesLimit] = useState("");
+    const [userName, setUserName] = useState("");
+
+
+    if(isAuth()){
+        const getComp = async () => {
+            // внутри функции получаем результат промиса
+            const res = await accountInfo(localStorage.getItem('accessToken'));
+            localStorage.setItem("CompaniesUsed", res.usedCompanyCount);
+            localStorage.setItem("CompaniesLimit", res.companyLimit);
+            setCompaniesUsed(res.usedCompanyCount);
+            setcompaniesLimit(res.companyLimit);
+            setUserName(localStorage.getItem("login"));
+        };
+        getComp();
+    }
+
+     
     const navigate = useNavigate();
     
     function clear(){
         console.log('clear');
         authClear();
         navigate("/");
+        window.location.reload();
     }
 
     if(isAuth()){
-        console.log('isAuth');
-        
-        
-       
         return (
             <>
+                <div className={styles.limit}>
+                    <div className={styles.limit_used}>
+                        <div className={styles.info}>Использовано компаний </div>
+                        <div className={styles.data}>{companiesUsed}</div>
+                    </div>
+                    <div className={styles.limit_used}>
+                        <div className={styles.info}>Лимит по компаниям</div>
+                        <div className={styles.dataLimit}>{companiesLimit}</div>
+                    </div>    
+                </div>
                 <div className={styles.profileAuth}>
                     <div className={styles.profileInfo}>
-                        <div className={styles.profileName}>1</div>
+                        <div className={styles.profileName}>{userName}</div>
                         <div onClick={clear} className={styles.profileLogout}>Выйти</div>
                     </div>
                     <div className={styles.profileIcon}>
-                        <img src='./logo-scan-header.svg'></img>
+                        <img src='./avaMan.png'></img>
                     </div>
                 </div>
             </>

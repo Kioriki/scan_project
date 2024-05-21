@@ -1,10 +1,12 @@
 
 
 
-function authSet(data){
+function authSet(data, login){
     localStorage.setItem("isAuth", true);
     localStorage.setItem("expire", data.expire);
     localStorage.setItem("accessToken", data.accessToken);
+    localStorage.setItem("login", login);
+
 }
 
 function isAuth(){

@@ -29,23 +29,13 @@ function Form(){
         console.log(e);
         e.preventDefault();
 
-        // sendLogin(login,password)
-        // .then(function(result) {
-        //     console.log(result);
-        // });
 
-        // let sendLoginRes = sendLogin(login,password);
-        // console.log('zzz: ');
-        // console.log(sendLoginRes);
-        // if(sendLoginRes){
-        //     setResult(sendLoginRes);
-        // }
 
         postData('https://gateway.scan-interfax.ru/api/v1/account/login', { login: login, password: password })
         .then((data) => {
             console.log(data); 
             if (data.accessToken) {
-                authSet(data);
+                authSet(data, login);
                 navigate("/");
             } else {
                 setResult(data.message);
@@ -104,7 +94,10 @@ function Form(){
                     </label>
                     </div>
                     <div className={styles.error}>{result}</div>
-                    <button className={styles.btnSubmit}>Войти</button>
+                    <button 
+                    className={styles.btnSubmit}>
+                        Войти
+                        </button>
                     <div className={styles.formGroup}>
                     <a href="" className={styles.recoverPwd}>Восстановить пароль</a>
                     <label>Войти через:</label>

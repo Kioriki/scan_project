@@ -55,6 +55,52 @@
     background-color: transparent;
     cursor: pointer;
 }
+.profileAuth{
+    display: flex;
+}
+.profileName{
+    color: #000;
+    font-size: 14px;
+}
+.profileLogout{
+    font-size: 10px;
+    color: grey;
+    cursor: pointer;
+}
+.profileIcon{
+    margin-left: 10px;
+}
+.data{
+    font-size: 20px;
+    color: #000;
+}
+.info{
+    font-size: 10px;
+    color: grey;
+    margin-right: 6px;
+}
+.limit{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+}
+.limit_used{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.data{
+    font-size: 14px;
+    color:#000;
+    font-weight: 800;
+    
+}
+.dataLimit{
+    color:#8AC540;
+    font-weight: 800;
+}
+
 @media screen and (max-width: 1024px) {
     .profile {
         display: none;
