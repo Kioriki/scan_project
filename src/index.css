@@ -15,7 +15,7 @@
 .mySwiper .swiper-slide {height:auto; padding: 5px 0;}
 .swiper-button-prev, .swiper-button-next {color:#CCCCCC!important;}
 
-ul, li {margin: 0;padding: 0;}
+ul, li {margin: 0;padding: 0; list-style-type: none;}
 h1, h2 {margin: 0;padding: 0; text-transform: uppercase; font-family: 'Ferry';  font-weight: 900;  font-style: normal;}
 h3 {margin: 0;padding: 0;}
 h4 {margin: 0;padding: 0;}

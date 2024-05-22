@@ -42,9 +42,9 @@ function ResultSlider({ data, isLoading }) {
         </button>
         <div className={styles.wrapper}>
           <div className={styles.main}>
-            <div>Период</div>
-            <div>Всего</div>
-            <div>Риски</div>
+            <div className={styles.items_data}>Период</div>
+            <div className={styles.items_data}>Всего</div>
+            <div className={styles.items_data}>Риски</div>
           </div>
           <ul ref={dataListRef} className={styles.dataList}>
             {isLoading ? (
@@ -52,9 +52,9 @@ function ResultSlider({ data, isLoading }) {
             ) : (
                 mappingData.map((item, index) => (
                     <li key={index} className={styles.dataItem}>
-                      <div>{item.date}</div>
-                      <div>{item.totalValue}</div>
-                      <div>{item.riskValue}</div>
+                      <div className={styles.items}>{item.date}</div>
+                      <div className={styles.items}>{item.totalValue}</div>
+                      <div className={styles.items}>{item.riskValue}</div>
                     </li>
                 ))
             )}
