@@ -19,3 +19,33 @@
 .registr_img{
     margin-left: 100px;
 }
+.form_menu{
+    display: none;
+}
+
+@media (min-width: 350px) and (max-width: 992px){
+    .registr_info{
+        font-size: 22px;
+        line-height: 25px;
+        margin-right: 35px;
+    }
+    .registr_page{
+        flex-direction: column;
+        align-items: center;
+    }
+    .registr{
+        flex-direction: column;
+        
+    }
+    .form_menu{
+        display: flex;
+    }
+    
+    .form{
+        display: none;
+    }
+    .registr_img{
+        margin-left: -30px;
+    }
+}
+

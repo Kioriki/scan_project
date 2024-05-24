@@ -83,7 +83,7 @@ margin-top: 59px;
 }
 .tarifs_price{
     height: 50px;
-    position: relative;
+    
 }
 .tarif_auth{
     position: absolute;
@@ -141,4 +141,35 @@ ul{
     display: flex;
     justify-content: center;
     background-color: #D2D2D2;
+}
+
+
+@media (min-width: 350px) and (max-width: 992px){
+    .tarifs{
+        flex-direction: column;
+        margin-bottom: 43px;
+        
+    }
+    .beginner{
+        width: 375px;
+    }
+    .pro{
+        width: 375px;
+    }
+    .business{
+        width: 375px;
+    
+    }
+    .begginer_header,
+    .pro_header,
+    .business_header{
+        padding: 30px 1px 34px 24px;
+        position: relative;
+    }
+    .icon{
+        position: absolute;
+        right: 0;
+        top: 10px;
+        width: 20%;
+    }
 }

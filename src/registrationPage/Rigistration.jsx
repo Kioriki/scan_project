@@ -8,10 +8,11 @@ function Registration(){
             <div id="container">
                 <div className={styles.registr}>
                     <div className={styles.registr_page}>
-                        <div className={styles.registr_info}>Для оформления подписки на тариф, необходимо авторизоваться.</div>
+                        <div className={styles.registr_info}>Для оформления подписки на&nbsp;тариф,&nbsp;необходимо авторизоваться.</div>
+                        <div className={styles.form_menu}><Form /></div>
                         <div className={styles.registr_img}><img src='./Characters.svg'></img></div>
                     </div>
-                    <Form />
+                    <div className={styles.form}><Form /></div>
                 </div> 
             </div>
         </>

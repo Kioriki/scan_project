@@ -7,7 +7,7 @@ import {Navigation } from 'swiper/modules';
 
 
 
-function Slider1(){
+function Slider2(){
  
     return(
         <Swiper
@@ -40,4 +40,4 @@ function Slider1(){
     )
 }
 
-export default Slider1
+export default Slider2

@@ -208,29 +208,17 @@
       font-size: 22px;
       max-width: 380px;
     }
-    .Characters {
-      position: relative;
-      width: 335px;
-      height: 355px;
-      padding-left: 15px;
-      bottom: -700px;
-    }
+
     .loginForm {
-      position: relative;
+      
       box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.15);
       border-radius: 5px;
       width: 335px;
       height: 550px;
       padding: auto;
-      top: -300px;
+      
     }
-    .form img.lock {
-      position: absolute;
-      width: 90px;
-      height: 75px;
-      top: -60px;
-      left: 60px;
-    }
+
     .login::after {
       left: 5px;
       width: 100px;
@@ -240,6 +228,15 @@
     }
     .facebook {
       margin: 10px;
+    }
+    .formGroup input {
+      width: 100%;
+    }
+    .formGroup{
+      margin: 0;
+    }
+    .form{
+      margin-right: 0;
     }
   }
   

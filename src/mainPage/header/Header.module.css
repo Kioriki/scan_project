@@ -101,8 +101,24 @@
     font-weight: 800;
 }
 
-@media screen and (max-width: 1024px) {
-    .profile {
+
+.mobileMenuHidden {
+    display: none;
+}
+.menu {
+    display: none;
+}
+
+@media (min-width: 350px) and (max-width: 992px) {
+    .header_nav,
+    .profile{
         display: none;
     }
+    .menu {
+        display: block;
+    }
+    .logo_header{
+
+    }
 }
+
