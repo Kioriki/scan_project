@@ -3,6 +3,7 @@ import styles from './Result.module.css';
 
 import { mapArr } from '../../func/map';
 import DotLoader from 'react-spinners/DotLoader';
+// import SliderResult from './Slider_result';
 
 function ResultForm() {
   return (
@@ -50,8 +51,10 @@ function ResultSlider({ data, isLoading }) {
             {isLoading ? (
                 <ResultForm />
             ) : (
+            
                 mappingData.map((item, index) => (
                     <li key={index} className={styles.dataItem}>
+                      {/* <SliderResult/> */}
                       <div className={styles.items}>{item.date}</div>
                       <div className={styles.items}>{item.totalValue}</div>
                       <div className={styles.items}>{item.riskValue}</div>
