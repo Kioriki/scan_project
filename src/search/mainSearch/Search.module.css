@@ -125,7 +125,7 @@ input{
     margin-left: 20px;
 }
 .left_input::placeholder{
-    font-family: "Inter", sans-serif;
+    font-family: "Inter";
 }
 .data {
     display: flex;
@@ -231,3 +231,72 @@ input{
   .custom_checkbox:disabled+label::before {
     background-color: #e9ecef;
   }
+
+  
+  
+@media (min-width: 350px) and (max-width: 992px) {
+    .search{
+        flex-direction: column;
+        
+    }
+    .search_h1{
+        font-size: 28px;
+        line-height: 35px;
+        margin-right: 0;
+    }
+    .search_p{
+        font-size: 18px;
+    }
+    .search_container{
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .form{
+        flex-direction: column;
+        margin-bottom: 37px;
+    }
+    .column{
+        width: 100%;
+        margin: 0;
+    }
+    .left{
+        margin: 30px 14px;
+    }
+    .right{
+        display: none;
+    }
+    .data{
+        flex-direction: column;
+    }
+    .select{
+        width: 100%;
+    }
+    .left_input{
+        width: 100%;
+    }
+    .left_input:last-child{
+        margin-left: 0;
+    }
+    .text2{
+        font-size: 14px;
+    }
+    .folders{
+        display: none;
+    }
+    .img_rocket{
+        margin-top: 24px;
+        width: 375px;
+        overflow: hidden;
+    }
+    .img_docs{
+        margin: 0;
+        position: relative;
+    }
+    .document{
+        position: absolute;
+        top: -910px;
+        left: 270px;
+        width: 60px;
+    }
+
+}

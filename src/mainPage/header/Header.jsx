@@ -9,11 +9,15 @@ function Header() {
    <div id='container'>
        <div className={styles.header}>
             <div className={styles.logo_header}><img src='./logo-scan-header.svg'></img></div>
-            <Header_nav />
+            <div className={styles.header_nav}>
+            <Link to="/" className={styles.button_nav}>Главная</Link>
+            <Link to="/" className={styles.button_nav}>Тарифы</Link>
+            <Link to="/" className={styles.button_nav}>FAQ</Link>
+        </div>
             <AuthBlock />
-            {/* <div className={styles.menu}>
+            <div className={styles.menu}>
               <Menu />
-            </div> */}
+            </div>
             
         </div>
     </div>

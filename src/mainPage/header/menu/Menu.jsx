@@ -23,17 +23,26 @@ function Menu() {
       setMenuStatus(!menuStatus);
     }
   
-    // Обработчик входа
-    function enterHandler() {
-      handleMenu();
-      navigate("/auth");
-    }
+    // // Обработчик входа
+    // function enterHandler() {
+    //   handleMenu();
+    //   navigate("/auth");
+    // }
   
-    // Обработчик выхода
-    function exitHandler() {
-      authReset(setAuthStatus, navigate);
-      handleMenu();
-    }
+    
+    function clear(){
+      console.log('clear');
+      authClear();
+      navigate("/");
+      window.location.reload();
+  }
+
+    
+    // // Обработчик выхода
+    // function exitHandler() {
+    //   authReset(setAuthStatus, navigate);
+    //   handleMenu();
+    // }
   
     return (
         <>
@@ -52,24 +61,25 @@ function Menu() {
               ref={menuRef}
               className={menuStatus ? styles.mobileMenuVisible : styles.mobileMenuHidden}
           >
-            {/* Навигационное меню */}
-            <nav className={styles.navMobile}>
+            {/* Навигационное меню */} 
+            {/* <nav className={styles.navMobile}>
               <Header_nav handler={handleMenu} />
-            </nav>
+    </nav>*/}
+            <div className={styles.header_nav}>
+                <Link to="/" className={styles.button_nav}>Главная</Link>
+                <Link to="/" className={styles.button_nav}>Тарифы</Link>
+                <Link to="/" className={styles.button_nav}>FAQ</Link>
+            </div>
   
             {/* Аутентификация на мобильном устройстве */}
             <div className={styles.mobileAuth}>
-              <Link to={"#"} className={styles.mobileRegister}>
+              <Link to={"/"} className={styles.mobileRegister}>
                 Зарегистрироваться
               </Link>
               {authStatus === "false" ? (
-                  <button onClick={enterHandler} className={styles.mobileEnter}>
-                    Войти
-                  </button>
+                  <div className={styles.login}><Link to="/registr" className={styles.mobileEnter}>Войти</Link></div>
               ) : (
-                  <button onClick={exitHandler} className={styles.mobileEnter}>
-                    Выйти
-                  </button>
+                <div onClick={clear} className={styles.mobileEnter}>Выйти</div>
               )}
             </div>
           </div>

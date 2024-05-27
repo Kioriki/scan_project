@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
+import { useNavigate } from "react-router-dom";
 
+function Header_nav(props) {
+    const navigation = useNavigate();
 
-function Header_nav() {
+    function redirectMain() {
+        props.handler(); // Вызов функции-обработчика перед редиректом
+        navigation("/"); // Редирект на главную страницу
+    }
     return(
        
         <div className={styles.header_nav}>

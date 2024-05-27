@@ -243,7 +243,9 @@ const SearchForm = () => {
                     </label>
                   </div>
                   
-                  <button
+
+                </div>
+                <button
                       type="button"
                       onClick={handleSearch}
                       disabled={!isFormValid()}
@@ -252,7 +254,6 @@ const SearchForm = () => {
                     Поиск
                   </button>
                   <p className={styles.text2}>* Обязательные к заполнению поля</p>
-                </div>
               </div>
             </form>
 

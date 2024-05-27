@@ -83,7 +83,9 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-   
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    padding: 14px 10px;
 }
 .limit_used{
     display: flex;
@@ -115,10 +117,28 @@
         display: none;
     }
     .menu {
-        display: block;
+        display: flex;
+        width: 100px;
     }
     .logo_header{
 
+    }
+    .limit{
+        background-color: #D9D9D9;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+    .logo_header{
+        margin-left: 0;
+    }
+    .info{
+        font-size: 8px;
+    }
+    .profileAuth{
+        display: none;
+    }
+    .limit_used{
+        display: block;
     }
 }
 
