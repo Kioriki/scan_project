@@ -122,7 +122,10 @@
   .seeMoreBtnHidden {
     display: none;
   }
-
+.swiper-button-prev{
+    left: -130px;
+    background-color: #029491;
+  }
 
 
   @media (min-width: 350px) and (max-width: 992px){
