@@ -95,3 +95,9 @@ button:focus-visible {
   }
 }
 
+/* @media (min-width: 350px) and (max-width: 992px){
+  #container{
+    max-width: 335px;
+  }
+} */
+

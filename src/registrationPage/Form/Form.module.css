@@ -12,7 +12,7 @@
   
   .Auth {
     margin-top: 0;
-    color: var(--main-color-2);
+    color: #000;
     font-family: 'ferry';
     font-style: normal;
     font-weight: 900;
@@ -22,7 +22,7 @@
   }
   
   .Authorization h1 {
-    color: var(--main-color-2);
+    color: #000;
     font-size: 40px;
     font-family: Ferry;
     letter-spacing: 0.8px;
@@ -86,15 +86,8 @@
     
   }
  
-  .login::after {
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: 30px;
-    width: 150px;
-    height: 4px;
-    border-bottom: var(--main-color-1) solid 2px;
-  }
+
+
   
   .signup {
     flex-grow: 1;
@@ -109,15 +102,7 @@
     background-color: #FFF;
   }
   
-  .signup::after {
-    content: '';
-    position: absolute;
-    left: 15px;
-    top: 30px;
-    width: 200px;
-    height: 4px;
-    border-bottom: var(--main-color-1) solid 2px;
-  }
+
   
   .formGroup label {
     text-align: left;
@@ -196,7 +181,7 @@
     }
     .Auth {
       margin-top: 0;
-      color: var(--main-color-2);
+      color: #000;
       font-family: 'ferry';
       font-style: normal;
       font-weight: 900;
