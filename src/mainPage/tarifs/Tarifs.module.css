@@ -50,7 +50,7 @@ h3{
     padding: 30px 15px 34px 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     height: 132px;
     border-radius: 5px 5px 0 0;
@@ -61,7 +61,7 @@ h3{
     padding: 30px 10px 34px 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 132px;
 }
 .business_header{
@@ -69,7 +69,7 @@ h3{
     padding: 30px 5px 34px 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #FFF;
     height: 132px;
 }
@@ -151,14 +151,14 @@ ul{
         
     }
     .beginner{
-        width: 375px;
+        width: 100%;
     }
     .pro{
-        width: 375px;
+        width: 100%;
     }
     .business{
-        width: 375px;
-    
+        width: 100%;
+
     }
     .begginer_header,
     .pro_header,
@@ -168,14 +168,37 @@ ul{
     }
     .icon{
         position: absolute;
-        right: 0;
+        right: 10px;
         top: 10px;
         width: 20%;
     }
+    .pro_header .icon {
+        right:20px;
+    }
+    .tarifs_info{
+        margin-bottom: 0;
+    }
+    /* .tarif_info{
+        margin-top: 37px;
+    } */
     .tarif_auth{
         display: none;
     }
+    .btn_info_auth {
+        margin:0;
+        padding:20px;
+    }
     .btn_info_auth button{
-        margin: 0 0px 24px 0px;
+        margin:0;
+    }
+    .btn_info {
+        margin: 35px 0 0 0;
+        padding:20px;
+    }
+    .btn_info button {
+        margin:0;
+    }
+    .price_p{
+        margin-bottom: 25px;
     }
 }

@@ -11,15 +11,6 @@
 	font-style: normal;
 }
 
-.mySwiper {padding: 0 35px!important;}
-.mySwiper .swiper-slide {height:auto; padding: 5px 0;}
-.swiper-button-prev, .swiper-button-next {color:#CCCCCC!important;}
-
-ul, li {margin: 0;padding: 0; list-style-type: none;}
-h1, h2 {margin: 0;padding: 0; text-transform: uppercase; font-family: 'Ferry';  font-weight: 900;  font-style: normal;}
-h3 {margin: 0;padding: 0;}
-h4 {margin: 0;padding: 0;}
-p {margin: 0 auto; padding: 0; font-size:18px; }
 :root {
   font-family: "Inter";
   line-height: 1.5;
@@ -50,16 +41,24 @@ a:hover {
 #container{
   max-width: 1440px;
   margin: 0 auto;
+  padding:0 15px;
   
 }
 body {
 
-  /* display: flex; */
   place-items: center;
   width: 100%; 
+  margin:0;
+  padding:0;
 
 }
 
+img {max-width:100%;}
+ul, li {margin: 0;padding: 0; list-style-type: none;}
+h1, h2 {margin: 0;padding: 0; text-transform: uppercase; font-family: 'Ferry';  font-weight: 900;  font-style: normal;}
+h3 {margin: 0;padding: 0;}
+h4 {margin: 0;padding: 0;}
+p {margin: 0 auto; padding: 0; font-size:18px; }
 
 button {
   border-radius: 5px;
@@ -70,8 +69,11 @@ button {
   background-color: #5970FF;
   cursor: pointer;
   transition: border-color 0.25s;
-
+  max-width:100%;
+  width:100%;
+  padding:17px 15px;
 }
+button > div {margin:0!important; width:100%!important;}
 button:hover {
   box-shadow: inherit 0 0px 0px 40px inset;
 }
@@ -82,6 +84,16 @@ button:focus-visible {
 .button:active {
   
 }
+
+.mySwiper {padding: 0 35px!important;}
+.mySwiper .swiper-slide {height:auto; padding: 5px 0;}
+.mySwiper2 {width:100%;}
+.mySwiper2 .swiper-wrapper {align-items:center;}
+.mySwiper2 .swiper-slide {height:auto;}
+.swiper-button-prev, .swiper-button-next {color:#CCCCCC!important;}
+.swiper-button-prev.result-prev {left:-40px;}
+.swiper-button-next.result-next {right:-40px;}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -101,3 +113,7 @@ button:focus-visible {
   }
 } */
 
+@media (min-width: 350px) and (max-width: 992px){
+  button {width:100%!important;}
+  button > div {width:100%!important;}
+}

@@ -2,7 +2,6 @@ import styles from './Tarifs.module.css'
 
 function Business() {
     return (
-        <div id='container'>
         <div>
             <div className={styles.tarifs}>
                 <div className={styles.business}>
@@ -34,7 +33,6 @@ function Business() {
             </div>
             
         </div>
-    </div>
   )
 }
 

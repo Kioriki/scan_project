@@ -39,6 +39,7 @@
     }
     .form_menu{
         display: flex;
+        width:100%;
     }
     
     .form{

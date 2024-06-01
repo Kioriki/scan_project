@@ -59,7 +59,7 @@
   
   .loginsignup {
     width: 380px;
-    height: 30px;
+    /* height: 30px; */
     display: flex;
     width: 100%;
     justify-content: center;
@@ -75,7 +75,7 @@
     position: relative;
     text-align: center;
     color: #029491;
-    padding-bottom: 8px;
+    
     cursor: pointer;
     font-size: 16px;
     border-bottom: 2px solid #029491;
@@ -95,7 +95,7 @@
     color: #029491;
     cursor: pointer;
     font-size: 16px;
-    padding-bottom: 8px;
+    
     border-bottom: 2px solid #029491;
     border-radius: 0;
     cursor: pointer;
@@ -113,19 +113,19 @@
   }
   
   .loginContainer form {
-    padding: 15px;
+    padding: 15px 25px 25px 25px;
   }
   
   .formGroup {
     display:flex;
-    margin: 10px 30px; 
+    margin: 10px 0; 
     padding: 0;
     flex-direction: column;       
   }
   
   .formGroup input {
     display: flex;
-    width: 90%;
+    width: 100%;
     height: 40px;
     margin: 15px 0;
     border-radius: 5px;
@@ -198,12 +198,14 @@
       
       box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.15);
       border-radius: 5px;
-      width: 335px;
+      width: 100%;
       height: 550px;
       padding: auto;
-      
+      margin-top:50px;
     }
-
+    .loginsignup{
+      margin-bottom: 40px;
+    }
     .login::after {
       left: 5px;
       width: 100px;

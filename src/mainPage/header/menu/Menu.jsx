@@ -15,7 +15,7 @@ function Menu() {
     // Хук для навигации
     const navigate = useNavigate();
   
-    // Состояния меню и статуса аутентификации
+
     const [menuStatus, setMenuStatus] = useState(store.getState().menuStatus);
     const [authStatus, setAuthStatus] = useState(localStorage.getItem("AuthStatus"));
   
@@ -24,13 +24,7 @@ function Menu() {
       store.dispatch({ type: "CHANGE_MENU_STATUS" });
       setMenuStatus(!menuStatus);
     }
-  
-    // // Обработчик входа
-    // function enterHandler() {
-    //   handleMenu();
-    //   navigate("/auth");
-    // }
-  
+
     
     function clear(){
       console.log('clear');
@@ -39,17 +33,11 @@ function Menu() {
       window.location.reload();
   }
 
-    
-    // // Обработчик выхода
-    // function exitHandler() {
-    //   authReset(setAuthStatus, navigate);
-    //   handleMenu();
-    // }
-  
+
     if(isAuth()){
     return (
         <>
-          {/* Кнопка меню */}
+
           <div
               className={menuStatus ? styles.menuButtonOpened : styles.menuButton}
               onClick={handleMenu} 
@@ -59,23 +47,20 @@ function Menu() {
             <div className={styles.rectangle}></div>
           </div>
   
-          {/* Мобильное меню */}
+
           <div
               ref={menuRef}
               className={menuStatus ? styles.mobileMenuVisible : styles.mobileMenuHidden}
           >
             <div className={styles.logo_menu}><img src="/scan-logo-white.svg" alt='logo'></img></div>
-            {/* Навигационное меню */} 
-            {/* <nav className={styles.navMobile}>
-              <Header_nav handler={handleMenu} />
-    </nav>*/}
+
             <div className={styles.header_nav}>
                 <Link to="/" className={styles.button_nav}>Главная</Link>
                 <Link to="/" className={styles.button_nav}>Тарифы</Link>
                 <Link to="/" className={styles.button_nav}>FAQ</Link>
             </div>
   
-            {/* Аутентификация на мобильном устройстве */}
+
             <div className={styles.mobileAuth}>
               <Link to={"/"} className={styles.mobileRegister}>
                 Зарегистрироваться

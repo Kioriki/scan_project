@@ -23,27 +23,11 @@ function ResultSlider({ data, isLoading }) {
   const dataListRef = useRef(null);
   const mappingData = mapArr(data);
 
-  // const slideLeft = () => {
-  //   dataListRef.current.scrollLeft -= 133;
-
-  //   if (window.innerWidth <= 600) {
-  //     dataListRef.current.scrollLeft -= 298;
-  //   }
-  // };
-
-  // const slideRight = () => {
-  //   dataListRef.current.scrollLeft += 133;
-  //   if (window.innerWidth <= 600) {
-  //     dataListRef.current.scrollLeft += 298;
-  //   }
-  // };
 
   return (
-    <div id="container">
+    <>
       <div className={styles.resultSlider}>
-        {/* <button onClick={slideLeft} className={`${styles.controller} ${styles.controllerLeft}`} type="button">
-          <img src='/icon_left.svg' alt="Left Arrow" />
-        </button> */}
+
         <div className={styles.wrapper}>
           <div className={styles.main}>
             <div className={styles.items_data}>Период</div>
@@ -52,11 +36,22 @@ function ResultSlider({ data, isLoading }) {
           </div>
           <Swiper
               slidesPerView={7}
-              spaceBetween={160}
-              className="mySwiper"
+              className="mySwiper2"
               loop={false}
-              navigation={true}
+              //navigation={true}
+              navigation={{
+                nextEl:".result-next",
+                prevEl:".result-prev"
+              }}
               modules={[Navigation]}
+              breakpoints={{
+                "0":{
+                  slidesPerView:1
+                },
+                "376":{
+                  slidesPerView:8
+                }
+              }}
             > 
               
                
@@ -77,13 +72,12 @@ function ResultSlider({ data, isLoading }) {
                   )}
                              
           </Swiper>
+          <div className="swiper-button-prev result-prev"></div>
+          <div className="swiper-button-next result-next"></div>
         </div>
-        
-        {/* <button onClick={slideRight} className={`${styles.controller} ${styles.controllerRight}`} type="button">
-          <img src='/icon_right.svg' alt="Right Arrow" />
-        </button> */}
+
       </div>
-    </div>
+    </>
   );
 }
 

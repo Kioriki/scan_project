@@ -2,7 +2,6 @@ import styles from './Tarifs.module.css'
 
 function Pro() {
     return (
-        <div id='container'>
         <div>
             <div className={styles.tarifs}>
 
@@ -20,7 +19,7 @@ function Pro() {
                                     <div className={styles.price_actually}>1 299</div>
                                     <div className={styles.price_prev}>2 600</div>
                                 </div>
-                                <p>или 279 ₽/мес. при рассрочке на 24 мес.</p>
+                                <p className={styles.price_p}>или 279 ₽/мес. при рассрочке на 24 мес.</p>
                             </div>
                             <div className={styles.tarif_info}>
                                 <h4>В тариф входит:</h4>
@@ -37,7 +36,6 @@ function Pro() {
             </div>
             
         </div>
-    </div>
   )
 }
 

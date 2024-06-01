@@ -7,7 +7,6 @@ function Beginner() {
 
 
     return (
-        <div id='container'>
         <div>
             <div className={styles.tarifs}>
                 <div className={styles.beginner}>
@@ -27,7 +26,7 @@ function Beginner() {
                             {isAuth() ? (
                                 <div className={styles.tarif_auth}>Текущий тариф</div>
                             ) : ("")}
-                            <p>или 150 ₽/мес. при рассрочке на 24 мес.</p>
+                            <p className={styles.price_p}>или 150 ₽/мес. при рассрочке на 24 мес.</p>
                         </div>
                         <div className={styles.tarif_info}>
                             <h4>В тариф входит:</h4>
@@ -45,7 +44,6 @@ function Beginner() {
                 </div>
             </div>
         </div>
-    </div>
   )
 }
 
