@@ -13,8 +13,8 @@ function Main() {
                 <p className={styles.info}>Комплексный анализ публикаций, получение данных в формате PDF на электронную почту.</p>
                 
                 {isAuth() ? (
-                                <NavLink to="/search"><button><div className={styles.btn}>Запросить данные</div></button></NavLink>
-                            ) : (<NavLink to="/registr"><button><div className={styles.btn}>Запросить данные</div></button></NavLink>)}
+                                <NavLink to="/search"><button className={styles.btn_main}><div >Запросить данные</div></button></NavLink>
+                            ) : (<NavLink to="/registr"><button className={styles.btn_main}><div >Запросить данные</div></button></NavLink>)}
                 
             </div>
           <img className={styles.img_main}src='/main_img.svg'/>

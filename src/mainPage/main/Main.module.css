@@ -20,7 +20,7 @@ h1 {
 .img_main{
   width: 48%;
 }
-.btn{
+.btn_main{
   margin: 18px 0;
   width: 335px;
 }
@@ -44,7 +44,7 @@ h1 {
   .img_main{
     width: 100%;
   }
-  .btn{
+  .btn_main{
 
     width: 335px;
   }

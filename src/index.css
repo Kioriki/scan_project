@@ -71,7 +71,7 @@ button {
   transition: border-color 0.25s;
   max-width:100%;
   width:100%;
-  padding:17px 15px;
+  padding:17px 0;
 }
 button > div {margin:0!important; width:100%!important;}
 button:hover {
@@ -97,7 +97,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #000;
+    background-color: #FFF;
   }
   a:hover {
     color: #747bff;
