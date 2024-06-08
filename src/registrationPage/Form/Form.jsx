@@ -1,24 +1,35 @@
 import { useState } from "react";
 import styles from './Form.module.css'
-
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { authSet } from "../../func/authControl.jsx";
 import { sendLogin } from "../../func/interfax-api.jsx";
 
 const postData = async (url = '', data = {}) => {
-    // Формируем запрос
-    const response = await fetch(url, {
-      // Метод, если не указывать, будет использоваться GET
-      method: 'POST',
-     // Заголовок запроса
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      // Данные
-      body: JSON.stringify(data)
+    // // Формируем запрос
+    // const response = await fetch(url, {
+    //   // Метод, если не указывать, будет использоваться GET
+    //   method: 'POST',
+    //  // Заголовок запроса
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   // Данные
+    //   body: JSON.stringify(data)
+    // });
+    // return response.json(); 
+    const response = await axios.post(url, {
+        method: 'POST',
+        body: JSON.stringify(data),
+    }, {
+        headers: {
+            "Content-Type": "application/json",
+        },
     });
     return response.json(); 
 }
+
+
 
 function Form(){
     const navigate = useNavigate();
