@@ -1,4 +1,5 @@
-# React + Vite
+Проект "СКАН"
+ React + Vite
 
 npm install
 npm run dev
